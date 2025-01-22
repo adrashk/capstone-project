@@ -17,6 +17,7 @@
   --dark-color: #505050;
   --text-color: #131313;
   --link-color: #3b63fb;
+  --botton-color: #ffea00;
   --link-hover-color: #1d3ecf;
 
   /* fonts */
@@ -111,6 +112,10 @@ h6 {
   line-height: 1.25;
   scroll-margin: 40px;
 }
+#next-adventures, #recent-articles{
+  border-bottom: 2px solid  #ffea00;
+    width: 234px
+}
 
 h1 { font-size: var(--heading-font-size-xxl); }
 h2 { font-size: var(--heading-font-size-xl); }
@@ -173,16 +178,16 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  /* border-radius: 2.4em; */
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 100;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--botton-color);
+  color: var(--text-color);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;

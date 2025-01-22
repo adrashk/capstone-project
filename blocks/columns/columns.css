@@ -19,6 +19,13 @@
   display: block;
 }
 
+.useravatar  .columns p img {
+  height: 80px;
+  border-radius: 30px;
+  width: 20%;
+}
+
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;

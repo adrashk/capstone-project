@@ -52,7 +52,7 @@ header nav p {
 
 header nav a:any-link {
   color: currentcolor;
-}
+  }
 
 /* hamburger */
 header nav .nav-hamburger {
@@ -152,7 +152,7 @@ header nav .nav-brand img {
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
   display: none;
   visibility: hidden;
 }
@@ -179,6 +179,22 @@ header nav .nav-sections ul > li > ul {
 
 header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
+}
+
+.sign-section {
+  text-align: right;
+  background-color: black;
+    color: white;
+}
+.sign-section a {
+  margin-right: 35px;
+  color: white;
+
+}
+.nav-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
 }
 
 @media (width >= 900px) {

@@ -25,3 +25,9 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+.social-link ul {
+  display: flex;
+    list-style-type: none;
+    gap: 26px;
+}

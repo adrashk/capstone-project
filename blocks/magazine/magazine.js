@@ -1,26 +1,25 @@
 export default async function decorate(block) {
   fetch('http://localhost:3000/query-index.json')
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
-        throw new Error('Network response was not ok ' + response.statusText);
+        throw new Error(`Network response was not ok  ${response.statusText}`);
       }
-      return response.json(); 
+      return response.json();
     })
-    .then(value => {
-
+    .then((value) => {
       const cardData = value;
-      const creteCard = document.createElement("div");
+      const creteCard = document.createElement('div');
       creteCard.className = 'card-cls'
       cardData.data.forEach((item) => {
-        const card = document.createElement("div");
-        card.className = "card";
-        const img = document.createElement("img");
+        const card = document.createElement('div');
+        card.className = 'card';
+        const img = document.createElement('img');
         img.src = item.image;
-        img.alt = "Card Image";
-        const title = document.createElement("h3");
+        img.alt = 'Card Image';
+        const title = document.createElement('h3');
         title.textContent = item.title;
-        const description = document.createElement("div");
-        description.className = "card-description";
+        const description = document.createElement('div');
+        description.className = 'card-description';
         description.textContent = item.description;
         card.appendChild(img);
         card.appendChild(title);
@@ -31,8 +30,6 @@ export default async function decorate(block) {
         creteCard.appendChild(card);
         block.appendChild(creteCard);
       });
-
-
     })
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error);

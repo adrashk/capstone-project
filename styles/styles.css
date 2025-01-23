@@ -112,6 +112,7 @@ h6 {
   line-height: 1.25;
   scroll-margin: 40px;
 }
+
 #next-adventures, #recent-articles{
   border-bottom: 2px solid  #ffea00;
     width: 234px
@@ -178,7 +179,6 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  /* border-radius: 2.4em; */
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;

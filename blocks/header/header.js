@@ -161,17 +161,13 @@ export default async function decorate(block) {
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
-  let sinIn = document.createElement('div');
+  const sinIn = document.createElement('div');
   sinIn.className = 'sign-section';
-
-
-  let sinAnchor = document.createElement('a');
+  const sinAnchor = document.createElement('a');
   sinAnchor.href = '/modals/sign-in';
   sinAnchor.textContent = 'SIGN IN';
   sinIn.appendChild(sinAnchor);
-  navWrapper.append(sinIn)
-
-
+  navWrapper.append(sinIn);
   navWrapper.append(nav);
   block.append(navWrapper);
 }

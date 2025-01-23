@@ -31,7 +31,7 @@ export default async function decorate(block) {
         block.appendChild(creteCard);
       });
     })
-    .catch(error => {
+    .catch((error) => {
       console.error('There was a problem with the fetch operation:', error);
     });
 }

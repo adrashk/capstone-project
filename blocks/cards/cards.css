@@ -26,8 +26,8 @@
   object-fit: cover;
 }
 
-.social-link ul {
-  display: flex;
+.social-link .cards-card-body ul {
     list-style-type: none;
     gap: 26px;
+    display: flex
 }

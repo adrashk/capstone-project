@@ -23,8 +23,7 @@
     object-fit: cover;
   }
 
-  .card-description {
-    font-family: Arial, sans-serif;
+  .card-description { 
     font-size: 14px;
     color: #333;
     white-space: nowrap;

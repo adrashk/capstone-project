@@ -10,7 +10,8 @@ export default async function decorate(block) {
       const cardData = value;
       const creteCard = document.createElement('div');
       creteCard.className = 'card-cls';
-      cardData.data.forEach((item) => {
+      cardData.data.forEach((item,index) => {
+        if(index < 6){
         const card = document.createElement('div');
         card.className = 'card';
         const img = document.createElement('img');
@@ -29,6 +30,7 @@ export default async function decorate(block) {
         });
         creteCard.appendChild(card);
         block.appendChild(creteCard);
+        }
       });
     })
     .catch((error) => {

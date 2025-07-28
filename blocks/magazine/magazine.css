@@ -1,0 +1,32 @@
+.card-cls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card-cls h3{
+    margin : 10px 0;
+     font-size : 18px;
+     color : #333;
+  }
+
+  .card {
+    width: 250px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card-description { 
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
